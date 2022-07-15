@@ -1,12 +1,6 @@
 //Estructura de control
 
 
-//ESTRUCTURA DE IF
-//if (condition) {
-    //AQUI VAN LAS INSTRUCCIONES DE QUE HACER SI SE CUMPLE LA CONDICION
-//} else {      }
-
-
 //IF ELSE
 const puntaje = 1000;    
 if (puntaje == 1000) {//DOS SIGNOS IGUAL SIGNIFICA COMPARACION TRES SIGNOS IGUALES VE QUE SEAN IDENTICOS EN CONTENIDO Y FORMATO
@@ -15,8 +9,8 @@ if (puntaje == 1000) {//DOS SIGNOS IGUAL SIGNIFICA COMPARACION TRES SIGNOS IGUAL
  console.log("no es igual pues")
 }
 
-//IF CON DOS CONDICIONES IF
 
+//IF CON DOS CONDICIONES IF
 let rol="editor";
 
 if (rol==="admin") {
@@ -28,13 +22,9 @@ else if(rol=="editor") {
 else { console.log("no tienes acceso");
 }
 
-
-
 //SWICH USAR CUANDO TIENES MUCHAS CONDICIONES IF
 
 const metodoDePago = "bitcoin";
-
-
 switch (metodoDePago) {
     case "tarjeta":
         console.log("pagaste con tarjeta")//codigo que se ejecuta SI se cumple la condicion CASE:
@@ -61,6 +51,7 @@ switch (metodoDePago) {
 for (let i = 0; i < 10; i++ ) { // i++ SIGNIFICA QUE INCREMENTA i de a 1 en 1 hasta que se cumplea la condicion
     console.log(i)
 }
+
 //PREGUNTA PARA CONSEGUIR TRABAJO.
 //Analiza si el numero que esta "loopeando" es par o impar
 for(let i=0; i<20; i++){
@@ -93,7 +84,6 @@ while (i<10) {// Condicion
     console.log(i)// Codigo a ejecutar siempre que la condicion sea verdadera
     
     i++ //Incremento
-    
 }
 
 let index = 0 ;
