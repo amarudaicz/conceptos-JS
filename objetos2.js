@@ -29,6 +29,7 @@ const bicicleta={
     ruedas: "anchas",
     manubrio: "recto"
 }
+
 const {cuadro, ruedas} = bicicleta //separas con COMA las propiedades que quieres extraer
 
 console.log(cuadro)

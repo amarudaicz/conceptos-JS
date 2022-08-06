@@ -13,9 +13,8 @@ const carrito = [
 meses.forEach(function(mes){//se ejecuta una vez por cada elemento que haya en el array
 if (mes=="marzo") {
     console.log("marzo si esta");
-}
+}})
 
-})
 
 //.includues
 let resultado = meses.includes("marzo");//verifica si el elemento del array existe dentro de el y devuelve un valor TRUE o FALSE
@@ -26,18 +25,19 @@ let resultado2 = carrito.includes("audifonos");//NO SIRVE para arrays de objetos
 //console.log(resultado2)
 
 //.some ideal para Array de objetos
-
-resultado = carrito.some(function(producto){
-    return producto.nombre === "tablet"
+let resultado3 = carrito.some(function(producto){
+    return producto.nombre === "audifonos"
 });
-//console.log(resultado)
+
+console.log(resultado3)
 
 
-//.reduce para sumar el valor total de un Array como un carrito por ejemplo
+//.reduce para sumar el valor total de un Array como un carrito de compras por ejemplo
 resultado = carrito.reduce(function(total, producto){
     return total + producto.precio
 }, 0);
 //ARROW FUNCTION para acortar codigo
+
 resultado = carrito.reduce((total, producto) => total + producto.precio, 0);
 
 
@@ -50,15 +50,14 @@ resultado = carrito.filter(function(producto){
     return producto.nombre !== "audifonos"//puedes filtrar por nombre, precio, etc
 });//con !== NEGAMOS TODA IGUALDAD es decir que returna todos los que no se llamen audifonos
 
-
-console.log(resultado)
+// console.log(resultado)
 
 
 //ARROW FUNCTION EXPLICACION
 // Función tradicional
-//function (a){
+function as (){
     return a + 100;
-//}
+}
   
   // Desglose de la función flecha
   

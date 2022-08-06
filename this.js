@@ -7,10 +7,12 @@ const reservacion ={
     total:5000,
     pagado:false,
     informacion: function() {
-        console.log(`el cliente ${reservacion.nombre} reservo y su cantidad a pagar es de ${this.total}`)//A los objetos se les puede agregar una funcion dentro
-    } //CON esta sintaxis ${reservacion.nombre} tenemos que hacer referencia todo el tiempo al nombre de la variable paa eso existe la palabra reservada this
+        console.log(`el cliente ${reservacion.nombre} reservo y su cantidad a pagar es de ${reservacion.total}`)//A los objetos se les puede agregar una funcion dentro
+    } //CON esta sintaxis ${reservacion.nombre} tenemos que hacer referencia todo el tiempo al nombre de la variable para eso existe la palabra reservada this
 
 }
+
+
 //PARA CORREGIR ESTE ERROR UTILIZAMOS this en vez del nombre de la variable para hacer referencia (reservacion.nombre)//Cambiamos nombre de la variable para no tener errores
 const reservacion2 ={
     nombre:"pedro",
@@ -21,6 +23,7 @@ const reservacion2 ={
         console.log(`el cliente ${this.nombre} reservo y su cantidad a pagar es de ${this.total}`)//A los objetos se les puede agregar una funcion dentro
     }
 }
+
 //ENVIAMOS A LA CONSOLA NUESTRAS VARIABLES SIEMPRE ABAJO DE TODO
 //RECUERDA ACCEDEMOS AL OBJETO CON LA SINTAXIS DE PUNTO
 //invocamos las funciones que funcionan igual pero con this no tenemos que hacer referencia a el nombre de la variable
@@ -36,7 +39,7 @@ const problema ={
         console.log(`el cliente ${this.nombre}`);
     }//para que funcione este codigo deberiamos agregar la VARIABLE nombre a la ventana global de window
 }
+
 //agregamos la variable nombre a la ventana global, ahora si funcionaria el codigo!!
 window.nombre = "Juan";
-
 problema.informacion();
